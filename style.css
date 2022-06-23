@@ -13,10 +13,11 @@ body {
 .calculator {
   display: grid;
   justify-content: center;
-  align-content: center;
-  min-height: 95vh;
+  margin-top: 30px;
+  align-content: flex-start;
+  min-height: 80vh;
   grid-template-columns: repeat(4, 80px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 70px);
 }
 
 .calculator > button {
@@ -57,4 +58,12 @@ body {
 
 .span-two {
   grid-column: span 2;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo > a > img {
+  width: 150px;
 }
